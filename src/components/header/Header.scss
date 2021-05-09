@@ -1,0 +1,56 @@
+header {
+  padding-top: 5vh;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .heading {
+    width: 50%;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    & img {
+      width: 15px;
+    }
+    & .projectLink {
+      color: grey;
+      font-size: 2.5rem;
+      & > span {
+        display: block;
+        color: #000;
+      }
+      &:hover {
+        // // text-decoration: underline;
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
+        // animation: fade 5s ease-in-out;
+      }
+    }
+  }
+  .video {
+    width: 45vw;
+    height: fit-content;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      transform: scale(0.95);
+    }
+    & video {
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+// @keyframes fade {
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }

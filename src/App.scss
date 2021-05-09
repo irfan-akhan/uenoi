@@ -1,0 +1,127 @@
+body {
+  position: relative;
+  cursor: none;
+  background: url("/src/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+.linkBtn {
+  padding: 5px;
+  margin-top: 3rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    transition: all 0.3s ease-in-out;
+    background-color: orange;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 0%;
+    height: 20px;
+    z-index: -10;
+  }
+
+  &:hover::after {
+    width: 80%;
+  }
+}
+.App {
+  caret-color: red;
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  nav {
+    // background: transparent;
+    width: 85vw;
+    margin: auto;
+    padding: 2rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    div.logo {
+      padding-left: 2rem;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      width: 30%;
+      justify-content: space-evenly;
+      & li {
+        margin-right: 30px;
+      }
+      & a {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.753);
+        position: relative;
+
+        &::after {
+          content: "";
+          transition: all 0.3s ease-in-out;
+          background-color: orange;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0%;
+          height: 2px;
+        }
+        &:hover {
+          color: orange;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .container {
+    width: 80vw;
+    margin: 0 auto;
+    & .info {
+      text-align: center;
+      margin-top: 10rem;
+      color: gray;
+      font-weight: 300;
+      padding: 2rem;
+      & p {
+        font-size: 2rem;
+        width: 50%;
+        margin: auto;
+        padding: 0;
+      }
+    }
+    .fazool {
+      margin: 1rem auto;
+      display: flex;
+      justify-content: center;
+      & > div {
+        width: 48%;
+        height: 50vh;
+        padding: 1rem;
+        &:last-child {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          border-left: 1px solid rgba(128, 128, 128, 0.24);
+        }
+      }
+    }
+    #projects {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+  }
+}

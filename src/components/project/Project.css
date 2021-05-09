@@ -1,0 +1,52 @@
+.project {
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  cursor: none;
+}
+
+.project:hover {
+  border-radius: 15px;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.project img {
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.project img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.project p {
+  margin: 0%;
+  opacity: 0.7;
+}
+
+.project h3 {
+  margin: 0;
+  margin-top: 2.5rem;
+}
+
+.project:nth-of-type(odd) {
+  margin-top: 5rem;
+}
+
+.cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: orange;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-transition: translate(-50%, -50%);
+  transition: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+/*# sourceMappingURL=Project.css.map */

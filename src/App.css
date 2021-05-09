@@ -1,0 +1,168 @@
+body {
+  position: relative;
+  cursor: none;
+  background: url("/src/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.linkBtn {
+  padding: 5px;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.linkBtn::after {
+  content: "";
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: orange;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  width: 0%;
+  height: 20px;
+  z-index: -10;
+}
+
+.linkBtn:hover::after {
+  width: 80%;
+}
+
+.App {
+  caret-color: red;
+}
+
+.App a {
+  text-decoration: none;
+  color: #000;
+}
+
+.App nav {
+  width: 85vw;
+  margin: auto;
+  padding: 2rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.App nav div.logo {
+  padding-left: 2rem;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.App nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.App nav ul li {
+  margin-right: 30px;
+}
+
+.App nav ul a {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.753);
+  position: relative;
+}
+
+.App nav ul a::after {
+  content: "";
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: orange;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+}
+
+.App nav ul a:hover {
+  color: orange;
+}
+
+.App nav ul a:hover::after {
+  width: 100%;
+}
+
+.App .container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.App .container .info {
+  text-align: center;
+  margin-top: 10rem;
+  color: gray;
+  font-weight: 300;
+  padding: 2rem;
+}
+
+.App .container .info p {
+  font-size: 2rem;
+  width: 50%;
+  margin: auto;
+  padding: 0;
+}
+
+.App .container .fazool {
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .container .fazool > div {
+  width: 48%;
+  height: 50vh;
+  padding: 1rem;
+}
+
+.App .container .fazool > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-left: 1px solid rgba(128, 128, 128, 0.24);
+}
+
+.App .container #projects {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+/*# sourceMappingURL=App.css.map */
